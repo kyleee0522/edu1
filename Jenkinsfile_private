@@ -7,7 +7,7 @@ pipeline {
         dockerRepo = "hoooo/edu1-1_kyleee0522"
         // nexus
         //dockerRepo = "edu1"
-        dockerCredentials = 'docker_kyleee0522'
+        dockerCredentials = 'docker_private_kyleee'
         dockerImageVersioned = ""
         dockerImageLatest = ""
     }
