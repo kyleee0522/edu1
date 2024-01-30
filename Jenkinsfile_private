@@ -4,10 +4,10 @@ pipeline {
     environment {
         // Global 변수 선언
         // Harbor 사용시 : 앞에 project 이름이 붙는다. 예) edu
-        dockerRepo = "edu/edu1"
+        dockerRepo = "hoooo/edu1_kyleee"
         // nexus
         //dockerRepo = "edu1"
-        dockerCredentials = 'edu_private_docker_ci'
+        dockerCredentials = 'docker_kyleee0522'
         dockerImageVersioned = ""
         dockerImageLatest = ""
     }
@@ -39,7 +39,7 @@ pipeline {
                     // Harbor
                     docker.withRegistry('https://211.252.85.148:40002', dockerCredentials){
                     // nexus
-                    //docker.withRegistry( 'http://211.252.85.148:40010', dockerCredentials){
+                    //docker.withRegistry( 'http://211.43.12.162:40010', dockerCredentials){
                         dockerImageVersioned.push()
                         dockerImageLatest.push()
                     }
